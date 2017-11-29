@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+
+% NOAH'S TODOS
+% Add BOLDED keywords into descriptions
+% go over his with doug/others
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{yoshi}
+\usepackage{fontawesome}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Noah}{Yoshida}{ \urlstyle{same}\url{github.com/noyoshi} \\
+\href{nyoshida@nd.edu}{\faEnvelope \ nyoshida@nd.edu} | \faMobile\ 785.766.8047
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of Notre Dame}
+\descript{B.S. Computer Engieering}
+\location{Expected May 2020 | Notre Dame, IN}
+Dean's List (All Semesters) \\
+\location{ Cum. GPA: 3.819 / 4.0 \\
+Major GPA: 4.0 / 4.0}
+\sectionsep
+
+\subsection{University of Kansas}
+\descript{Non-Degree Seeking Student}
+\location{Jan 2015 - May 2015 | Lawrence, KS}
+\location{ Cum. GPA: 4.0 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+\faGithub \ GitHub:// \href{https://github.com/noyoshi}{\custombold{noyoshi}} \\
+\faLinkedin \ LinkedIn://  \href{https://www.linkedin.com/in/noah-yoshida-bba9b0136}{\custombold{noah-yoshida-bba9b0136}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\descript{Fall 2017}
+Fundamentals of Computing \\
+Discrete Math\\
+Programming Challenges \\
+{\footnotesize \textit{\textbf{\custombold{(Junior-Level Course)} }}} \\
+\sectionsep
+\descript{Spring 2018}
+Data Structures and Algorithms \\
+Logic Design \\
+Systems Programming \\
+Database Fundamentals \\
+{\footnotesize \textit{\textbf{\custombold{(Junior-Level Course)} }}} \\
+Research Assistant - Professor Chiang \\
+{\footnotesize \textit{\textbf{\custombold{(Machine Learning, NLP)} }}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\descript{Proficient}
+Python \textbullet{} C++ \textbullet{} MATLAB \\
+\descript{Familiar}
+JavaScript \textbullet{} SQL \\
+\sectionsep
+\subsection{Formatting}
+\descript{Proficient}
+HTML \textbullet{} CSS \textbullet{} Markdown \\
+\LaTeX\ \\
+\sectionsep
+\subsection{Other}
+Linux \textbullet{} TensorFlow \textbullet{} Django \\
+Web-Scrapping \textbullet{} Neural Networks \\
+UX/UI Design \textbullet{} Git \\
+Full Stack Web Development \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.65\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS SINCE I HAVE NO WORK EXP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{OtakuMe}
+\descript{| Creator }
+\location{Oct 2017 - Current | Notre Dame, IN}
+\location{\faGithub \ \href{https://github.com/noyoshi/OtakuMe}{github.com/noyoshi/OtakuMe}}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Full stack web application, which allows users to make meaningful searches for favorite anime / manga series, and discover new series based on their search.
+\item Created back end using Python + Django and SQLite, and front end UI with the bootstrap framework along with custom CSS and Javascript.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Chkr.io}
+\descript{| Team Member }
+\location{Oct 2017 | Columbia, MO}
+\location{\faGithub \ \href{https://github.com/noyoshi/TigerHacks}{github.com/noyoshi/TigerHacks}}
+\begin{tightemize}
+\item Full stack web application which provides users with fact accuracy and information consensus relating to news articles and reddit threads. \item Created the front-end UI with Materialze CSS + Javascript, and the back-end web scrapers with Python. \item Project was created and demo'ed at TigerHacks, a hackathon sponored by the University of Missourri. \end{tightemize}
+\sectionsep
+
+\runsubsection{Japanese + English Neural Network}
+\descript{| Team Member}
+\location{April 2017 – May 2017 | Notre Dame, IN}
+\location{\faGithub \ \href{https://github.com/noyoshi/language-nn-matlab}{github.com/noyoshi/language-nn-matlab}}
+\begin{tightemize}
+\item Neural network written in MATLAB for my Intro to Engineering final project. It determined the language of a word users put in, with over 90\% accuracy.  \item Wrote the functions for input processing, back propagation, and training. \item Created both single layer and multi layer networks to test how additional layers affect performance. \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work}
+\runsubsection{Oracle Japan}
+\descript{| Management Consulting Intern}
+\location{Jun 2017 – Jul 2017 | Tokyo, JP}
+Worked with other interns to analyze Oracle Japan's IaaS + PaaS business strategy.
+Interviewed senior executives and employees to determine operational risks, and presented findings to senior management as a group, along with possible solutions.
+\sectionsep
+
+\runsubsection{Office of Undergraduate Admissions} \\
+\descript{Reilly Student Committee Member}
+\location{Mar 2017 – Present | Notre Dame, IN}
+Works with the Office of Undergraduate Admissions and fellow committee members to plan and run the Reilly Program, a recruiting program that brings top applicants to the University of Notre Dame.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Honors + Awards}
+\begin{tabular}{rll}
+2016	     & Merit Scholarship  & Notre Dame Scholar's Program\\
+2016	     & Honors Program  & Glynn Family Honor's Program\\
+2016	     & Honors Program  & Building Bridges Mentoring Program\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Extra curriculars
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Clubs + Activities}
+
+\begin{tabular}{rll}
+2016   & Merit Program    & Notre Dame Merit Scholars\\
+2016   &  University  & Linux User's Group (LUG)\\
+2016   &  University   & Asian American Association\\
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}
